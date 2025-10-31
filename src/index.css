@@ -1,0 +1,82 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Playfair+Display:wght@700&display=swap');
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+@layer base {
+  :root {
+    /* BAARA Brand Colors */
+    --baara-dark: 227 27% 13%; /* #1B2030 */
+    --baara-gold: 38 60% 60%; /* #D9A359 */
+    --baara-light: 210 17% 98%; /* #F8F9FA */
+    /* Core Colors */
+    --background: 210 17% 98%; /* baara-light */
+    --foreground: 227 27% 13%; /* baara-dark */
+    --primary: 227 27% 13%;
+    --primary-foreground: 210 17% 98%;
+    --muted: 0 0% 96.1%;
+    --muted-foreground: 0 0% 45.1%;
+    --border: 0 0% 89.8%;
+    --ring: 38 60% 60%; /* baara-gold */
+    --card: 0 0% 100%;
+    --card-foreground: 227 27% 13%;
+    --popover: 0 0% 100%;
+    --popover-foreground: 227 27% 13%;
+    --secondary: 0 0% 96.1%;
+    --secondary-foreground: 227 27% 13%;
+    --accent: 38 60% 60%;
+    --accent-foreground: 227 27% 13%;
+    --destructive: 0 84.2% 60.2%;
+    --destructive-foreground: 0 0% 98%;
+    --input: 0 0% 89.8%;
+    --chart-1: 12 76% 61%;
+    --chart-2: 173 58% 39%;
+    --chart-3: 197 37% 24%;
+    --chart-4: 43 74% 66%;
+    --chart-5: 27 87% 67%;
+    --radius: 0.5rem;
+  }
+  .dark {
+    /* BAARA Brand Colors */
+    --baara-dark: 227 27% 13%;
+    --baara-gold: 38 60% 60%;
+    --baara-light: 210 17% 98%;
+    /* Core Colors */
+    --background: 227 27% 13%; /* baara-dark */
+    --foreground: 210 17% 98%; /* baara-light */
+    --primary: 210 17% 98%;
+    --primary-foreground: 227 27% 13%;
+    --muted: 0 0% 14.9%;
+    --muted-foreground: 0 0% 63.9%;
+    --border: 0 0% 14.9%;
+    --ring: 38 60% 60%; /* baara-gold */
+    --card: 227 27% 13%;
+    --card-foreground: 210 17% 98%;
+    --popover: 227 27% 13%;
+    --popover-foreground: 210 17% 98%;
+    --secondary: 0 0% 14.9%;
+    --secondary-foreground: 210 17% 98%;
+    --accent: 38 60% 60%;
+    --accent-foreground: 210 17% 98%;
+    --destructive: 0 62.8% 30.6%;
+    --destructive-foreground: 0 0% 98%;
+    --input: 0 0% 14.9%;
+    --chart-1: 220 70% 50%;
+    --chart-2: 160 60% 45%;
+    --chart-3: 30 80% 55%;
+    --chart-4: 280 65% 60%;
+    --chart-5: 340 75% 55%;
+  }
+  * {
+    @apply border-border;
+  }
+  html {
+    scroll-behavior: smooth;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+  }
+  body {
+    @apply bg-background text-foreground;
+    font-feature-settings: 'cv02', 'cv03', 'cv04', 'cv11';
+    text-rendering: optimizeLegibility;
+  }
+}
